@@ -1,0 +1,106 @@
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$background-color: #f4f4f4;
+$text-color: #333;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 15px;
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            li {
+                margin: 0 15px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        color: $secondary-color;
+                        transition: color 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    color: $primary-color;
+}
+
+.container, .contact, .projects {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+// Estilo para la sección de servicios
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    .service {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// Estilo para proyectos con antes y después
+.before-after {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    img {
+        width: 45%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// WhatsApp botón flotante
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    a {
+        display: flex;
+        align-items: center;
+        background-color: #25D366;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Footer
+footer {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}

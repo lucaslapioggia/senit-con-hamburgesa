@@ -1,0 +1,376 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado y navegación */
+header {
+  background: #222;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Estilos del video de fondo */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Estilos de la sección "Nosotros" */
+.nosotros-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.nosotros-container h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.nosotros-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+.nosotros-imagen {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nosotros-imagen img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del pie de página */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos de la sección "Servicios" */
+.servicios-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.servicio {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.servicio {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.servicio h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.servicio p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.servicio img {
+  width: 70%;         /* Antes podía ser 100% o mayor */
+  max-width: 500px;   /* Limita el tamaño máximo */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.servicio img:hover {
+  transform: scale(1.03);
+}
+
+
+/* Estilos de la sección "Proyectos" */
+.proyectos-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.antes-despues-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.antes-despues {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.antes-despues img {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion-trabajo {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+
+
+/* Estilos de la sección de contacto */
+.contacto-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contacto-container h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.contacto-container p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Estilos de la sección de ubicación */
+.ubicacion-container {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.ubicacion-container h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.ubicacion-img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.ubicacion-img:hover {
+  transform: scale(1.02);
+}
+
+/* Estilos de las redes sociales */
+.redes-sociales {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.redes-sociales h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes-container a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.redes-container a img:hover {
+  transform: scale(1.1);
+}
+
+/* Animaciones de aparición */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Estilos del pie de página */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Menú hamburguesa y responsive */
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+  }
+}
